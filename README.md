@@ -15,4 +15,5 @@ In priority, on each cycle, the whole ready queue is checked and if there is a p
 In round robin, each process has a time slice for example if it is 2s, every process will run 2 seconds and then get replaced. Like this all processes will run until they're all terminated.
 At the end, in all cases, a gantt chart is printed on console which prints timer and processes along with their states and which cpu runs which process at a given time.
 This gantt chart is also written to txt file specified in input as Output file.
+All queues were made thread safe using mutexes to avoid race condition and synchronisation was maintained between all the threads.
 Here the simulation ends.
